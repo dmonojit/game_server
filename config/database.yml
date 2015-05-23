@@ -24,18 +24,18 @@
 #  pool: 5
 #  timeout: 5000
 
-<%= Rails.env %>:
-  adapter: mysql2
-  database: game_server
-  pool: 100
-  timeout: 5000
-  reconnect: true
-
 #<%= Rails.env %>:
-#  adapter: postgresql
-#  encoding: unicode
-#  database: game_server_<%= Rails.env %>
-#  pool: 5
-#  username: game_server
-#  password:
-#  host: localhost
+#  adapter: mysql2
+#  database: game_server
+#  pool: 100
+#  timeout: 5000
+#  reconnect: true
+
+<%= Rails.env %>:
+  adapter: postgresql
+  encoding: unicode
+  database: game_server
+  pool: 5
+  username: game_server_new
+  password: secret
+  host: localhost
