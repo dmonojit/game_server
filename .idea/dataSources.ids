@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails game_server: development" uuid="cbaa3693-5318-421a-876c-9a268e059b02">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails game_server: &lt;%= Rails.env %&gt;" uuid="2994a8e4-7a66-4327-8b07-7e5648fb4401">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails game_server: test" uuid="9690ad6e-db7a-424f-a10e-ab07ab791bdf">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails game_server: production" uuid="37f5163c-e564-47d7-8296-07c1cb498cc1">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>

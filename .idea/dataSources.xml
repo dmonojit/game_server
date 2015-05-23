@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="176349694">
+    <data-source source="LOCAL" name="Rails game_server: development" uuid="cbaa3693-5318-421a-876c-9a268e059b02">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:game_server_&lt;%= Rails.env %&gt;</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails game_server: &lt;%= Rails.env %&gt;" uuid="2994a8e4-7a66-4327-8b07-7e5648fb4401">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1/game_server</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails game_server: test" uuid="9690ad6e-db7a-424f-a10e-ab07ab791bdf">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:myapp_test</jdbc-url>
+      <user-name>myapp</user-name>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails game_server: production" uuid="37f5163c-e564-47d7-8296-07c1cb498cc1">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:myapp_production</jdbc-url>
+      <user-name>myapp</user-name>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+
