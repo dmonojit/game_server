@@ -10,15 +10,6 @@ class DictionaryService
     def get_service
       @service ||= DictionaryService.new
     end
-
-    def test
-      f = File.open(FILENAME, 'r')
-      f.each_line do |word|
-        word.gsub!("\n", '')
-        word = word.split("\'")[0]
-        puts word
-      end
-    end
   end
 
   def get_words

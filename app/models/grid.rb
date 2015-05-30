@@ -74,9 +74,6 @@ class Grid < ActiveRecord::Base
             next
           end
           blocks = send("take_#{direction}_blocks".to_sym, position, word.size)
-          pp "=========================#{word}================="
-          pp "=========================#{blocks.collect(&:id)}================"
-          sleep 2
           fill_word_in_blocks(word, blocks)
           create_valid_grid(direction, blocks)
           flag = false
