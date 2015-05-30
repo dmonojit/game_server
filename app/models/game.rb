@@ -14,8 +14,8 @@ class Game < ActiveRecord::Base
   belongs_to :admin, :class_name => 'Player'
   has_one :grid
   has_many :players
-  has_one :next_player, :class_name => 'Player'
-  has_one :winner_player, :class_name => 'Player'
+  belongs_to :next_player, :class_name => 'Player'
+  belongs_to :winner_player, :class_name => 'Player'
 
   class << self
     def create_game(admin_nick)
