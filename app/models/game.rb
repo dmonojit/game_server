@@ -150,7 +150,7 @@ class Game < ActiveRecord::Base
   def mark_as_completed
     winner = self.players.sort_by(&:score).last
     update_winner_player(winner.id)
-    self.update_attributes!(:status => COMPLETED)
+    self.update_attributes!(:state => COMPLETED)
   end
 
   def update_next_player(player_id)
