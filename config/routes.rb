@@ -1,7 +1,14 @@
 GameServer::Application.routes.draw do
+
+  put "game/join"
+  put "game/start"
+  post "game/info"
+  post "game/play"
+
   resources :game
 
   get "welcome/index"
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

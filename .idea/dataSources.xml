@@ -10,7 +10,7 @@
     <data-source source="LOCAL" name="Rails game_server: &lt;%= Rails.env %&gt;" uuid="2994a8e4-7a66-4327-8b07-7e5648fb4401">
       <driver-ref>mysql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1/game_server_&lt;%= Rails.env %&gt;</jdbc-url>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/game_server</jdbc-url>
       <user-name>game_server_new</user-name>
       <user-password>dfd9dfcfdfc9dfd8dfcfdfde</user-password>
       <libraries />

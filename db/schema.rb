@@ -11,13 +11,29 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150521100639) do
+ActiveRecord::Schema.define(:version => 20150525154218) do
+
+  create_table "blocks", :force => true do |t|
+    t.integer  "row"
+    t.integer  "column"
+    t.string   "letter"
+    t.integer  "grid_id"
+    t.integer  "valid_grid_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "games", :force => true do |t|
     t.string   "external_game_id"
     t.string   "state"
     t.integer  "admin_id"
-    t.integer  "current_player_id"
+    t.integer  "next_player_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "grids", :force => true do |t|
+    t.integer  "game_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -27,6 +43,15 @@ ActiveRecord::Schema.define(:version => 20150521100639) do
     t.string   "nick"
     t.boolean  "is_winner"
     t.integer  "game_id"
+    t.integer  "next_player_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "valid_grids", :force => true do |t|
+    t.string   "direction"
+    t.integer  "found_by_player_id"
+    t.integer  "grid_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
