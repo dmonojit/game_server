@@ -49,7 +49,7 @@ class Game < ActiveRecord::Base
     flag, message = can_start?(player_id)
     return [flag, message, nil] unless flag
     mark_as_started
-    [true, 'Game successfully started', self.grid]
+    [true, 'Game successfully started', self.grid_info]
   end
 
   def play(player_id, word)
@@ -127,7 +127,6 @@ class Game < ActiveRecord::Base
         :scores => self.players.inject({}) do |hash, player|
           hash.merge!(player.nick => player.score)
         end,
-        :winner => self.winner_player,
         :grid => self.grid_info
     }
   end

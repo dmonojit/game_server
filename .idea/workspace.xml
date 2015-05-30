@@ -26,8 +26,8 @@
       <file leaf-file-name="game_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/game_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="727" max-vertical-offset="1410">
-              <caret line="61" column="63" selection-start-line="61" selection-start-column="63" selection-end-line="61" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1410">
+              <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -53,10 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="grid.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="grid.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/grid.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.1802325" vertical-offset="0" max-vertical-offset="2115">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2115">
               <caret line="75" column="79" selection-start-line="75" selection-start-column="79" selection-end-line="75" selection-end-column="79" />
               <folding />
             </state>
@@ -83,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="game.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/game.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.233334" vertical-offset="1298" max-vertical-offset="2625">
-              <caret line="121" column="6" selection-start-line="121" selection-start-column="6" selection-end-line="121" selection-end-column="6" />
+            <state vertical-scroll-proportion="3.4418604" vertical-offset="292" max-vertical-offset="2610">
+              <caret line="128" column="12" selection-start-line="128" selection-start-column="12" selection-end-line="128" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -150,9 +150,9 @@
         <option value="$PROJECT_DIR$/db/migrate/20150517174140_create_games.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20150521100639_create_players.rb" />
         <option value="$PROJECT_DIR$/app/models/player.rb" />
-        <option value="$PROJECT_DIR$/app/models/game.rb" />
         <option value="$PROJECT_DIR$/app/models/grid.rb" />
         <option value="$PROJECT_DIR$/app/models/dictionary_service.rb" />
+        <option value="$PROJECT_DIR$/app/models/game.rb" />
       </list>
     </option>
   </component>
@@ -828,22 +828,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/game_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="727" max-vertical-offset="1410">
-          <caret line="61" column="63" selection-start-line="61" selection-start-column="63" selection-end-line="61" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/game.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.233334" vertical-offset="1298" max-vertical-offset="2625">
-          <caret line="121" column="6" selection-start-line="121" selection-start-column="6" selection-end-line="121" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/dictionary_service.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="99" max-vertical-offset="615">
@@ -862,8 +846,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/grid.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.1802325" vertical-offset="0" max-vertical-offset="2115">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2115">
           <caret line="75" column="79" selection-start-line="75" selection-start-column="79" selection-end-line="75" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/game_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1410">
+          <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/game.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.4418604" vertical-offset="292" max-vertical-offset="2610">
+          <caret line="128" column="12" selection-start-line="128" selection-start-column="12" selection-end-line="128" selection-end-column="12" />
           <folding />
         </state>
       </provider>
