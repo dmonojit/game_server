@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(:version => 20150525154218) do
     t.string   "state"
     t.integer  "admin_id"
     t.integer  "next_player_id"
+    t.integer  "winner_player_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -41,9 +42,9 @@ ActiveRecord::Schema.define(:version => 20150525154218) do
   create_table "players", :force => true do |t|
     t.string   "external_player_id"
     t.string   "nick"
-    t.boolean  "is_winner"
     t.integer  "game_id"
     t.integer  "next_player_id"
+    t.integer  "score",              :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -15,6 +15,7 @@ class Game < ActiveRecord::Base
   has_one :grid
   has_many :players
   has_one :next_player, :class_name => 'Player'
+  has_one :winner_player, :class_name => 'Player'
 
   class << self
     def create_game(admin_nick)
@@ -71,6 +72,7 @@ class Game < ActiveRecord::Base
       chosen_valid_grid = remaining_valid_grids.detect{ |grid| grid.word.eql?(word) }
       chosen_valid_grid.update_found_by(player.id)
       mark_as_completed if self.grid.valid_grids.not_found.blank?
+      player.update_score(PASS)
       PASS
     else
       FAIL
@@ -125,6 +127,7 @@ class Game < ActiveRecord::Base
         :scores => self.players.inject({}) do |hash, player|
           hash.merge!(player.nick => player.score)
         end,
+        :winner => self.winner_player,
         :grid => self.grid_info
     }
   end
@@ -146,11 +149,17 @@ class Game < ActiveRecord::Base
   end
 
   def mark_as_completed
+    winner = self.game.players.sort_by(&:score).last
+    update_winner_player(winner.id)
     self.update_attributes!(:status => COMPLETED)
   end
 
   def update_next_player(player_id)
     self.update_attributes!(:next_player_id => player_id)
+  end
+
+  def update_winner_player(player_id)
+    self.update_attributes!(:winner_player_id => player_id)
   end
 
   def update_last_player(player_id)

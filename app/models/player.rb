@@ -21,7 +21,8 @@ class Player < ActiveRecord::Base
     Player.find(self.next_player_id)
   end
 
-  def score
-    self.game.grid.valid_grids_found_by_player_id(self.id).count
+  def update_score(new_score)
+    score = self.score
+    self.update_attributes!(:score => score + new_score)
   end
 end
